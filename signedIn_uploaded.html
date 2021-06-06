@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Uploaded! - SquareEyes</title>
+    <meta name="description" content="Film successfully uploaded" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/styles-820.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/isu5gkb.css" />
+    <script defer src="js/components/footer.js"></script>
+    <script src="https://kit.fontawesome.com/7d46e21d26.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- POPUP -->
+      <div class="popup uploaded">
+        <p>
+          Your film was uploaded
+          <span class="green">successfully!</span>
+        </p>
+        <p>Go check it out in your <a href="signedIn_library.html">library.</a></p>
+        <p class="close-window">
+          <a href="signedIn_upload.html"><i class="far fa-times-circle"></i>Close this window</a>
+        </p>
+      </div>
+      <!-- POPUP -->
+
+      <!-- LOGO -->
+      <a class="logo" href="signedIn_home.html">
+        <img src="images/logoOriginal.png" alt="Home of SquareEyes" />
+      </a>
+      <!-- HAMBURGER / MENU -->
+      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav>
+        <ul>
+          <li>
+            <a a href="signedIn_home.html" class="btn"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="signedIn_films.html" class="btn"><i class="fas fa-film"></i>Films</a>
+          </li>
+
+          <li>
+            <a href="signedIn_community.html" class="btn current"> <i class="fas fa-glasses"></i>Community</a>
+          </li>
+          <li>
+            <a href="signedIn_profile_marius.html" class="btn"><i class="fas fa-user-alt"></i>Marius</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sign out -->
+      <div class="signOut">
+        <a href="index.html">sign out<i class="fas fa-sign-in-alt"></i></a>
+      </div>
+      <!-- SEARCH-BAR -->
+      <div id="searchbar">
+        <div class="search_box">
+          <input id="theInput" type="search" placeholder="Search.." />
+          <form method="get" action="search.html">
+            <button id="theButton"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <div id="wrapper">
+      <div aria-label="You are here" class="breadcrumbs">
+        <ul>
+          <li><i class="fas fa-thumbtack"></i></li>
+          <li><a href="signedIn_community.html">Community</a></li>
+          <li><i class="fas fa-angle-right"></i></li>
+          <li>Your library</li>
+        </ul>
+      </div>
+
+      <main>
+        <h2>Upload your film</h2>
+        <section>
+          <div class="upload">
+            <i class="fas fa-upload"></i>
+            <p>Drag & drop your film project here!</p>
+            <a class="btn-find" href="#0">Find file</a>
+          </div>
+
+          <!-- Section -->
+          <label>
+            <span class="upload-headings">1) Name your masterpiece</span>
+            <input type="text" name="nameyourmasterpiece" id="nameyourmasterpiece" value="Sample Film" class="form__input_upload" required />
+          </label>
+          <!-- Section -->
+          <label>
+            <span class="upload-headings">2) Enter the date you want your film to be published</span>
+            <input type="date" name="date" id="date" class="form__input_upload" required />
+          </label>
+          <!-- Section -->
+          <span class="upload-headings">3) Choose your cover</span>
+          <div class="upload-cover">
+            <span class="cover start"></span>
+            <span class="cover"><a class="btn-find" href="#0">Find file</a></span>
+            <span class="cover"><a class="btn-find" href="#0">Find file</a></span>
+          </div>
+          <!-- Section -->
+          <span class="upload-headings">4) Choose genre</span>
+          <div class="genre-box">
+            <a href="#0" tabindex="1" class="genre">Action</a>
+            <a href="#0" tabindex="1" class="genre">Comedy</a>
+            <a href="#0" tabindex="1" class="genre">Drama</a>
+            <a href="#0" tabindex="1" class="genre">Fantasy</a>
+            <a href="#0" tabindex="1" class="genre yellow">Horror</a>
+            <a href="#0" tabindex="1" class="genre">Mystery</a>
+            <a href="#0" tabindex="1" class="genre">Romance</a>
+            <a href="#0" tabindex="1" class="genre">Western</a>
+            <a href="#0" tabindex="1" class="genre">Thriller</a>
+          </div>
+          <span class="upload-headings">5) Choose film rating</span>
+          <!-- Section -->
+          <div class="film-rating">
+            <div><input type="checkbox" name="g-generalAudiences" id="g-generalAudiences" class="form__input_nb" /><label for="g-generalAudiences">G - General Audiences</label></div>
+            <div>
+              <input type="checkbox" name="pg-parentalGuidanceSuggested" id="pg-parentalGuidanceSuggested" class="form__input_nb" /><label for="pg-parentalGuidanceSuggested"
+                >PG - Parental Guidance Suggested</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" name="pg-parentsStronglyCautioned" id="pg-parentsStronglyCautioned" class="form__input_nb" /><label for="pg-parentsStronglyCautioned"
+                >PG 13 - Parents Strongly Cautioned</label
+              >
+            </div>
+            <div><input type="checkbox" name="r-restricted" id="r-restricted" class="form__input_nb" /><label for="r-restricted">R - Restricted</label></div>
+            <div><input type="checkbox" name="nc-adultsOnly" id="nc-adultsOnly" class="form__input_nb" checked /><label for="nc-adultsOnly">NC 17 - Adults Only</label></div>
+            <div class="flex">
+              <a href="#0" class="cta-create">Upload</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- === Footer === -->
+      <footer><!-- js --></footer>
+    </div>
+  </body>
+</html>

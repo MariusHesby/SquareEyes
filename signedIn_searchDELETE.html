@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Films - SquareEyes</title>
+    <meta name="description" content="The search results when searching for a keyword" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/styles-820.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/isu5gkb.css" />
+    <script defer src="js/components/searchbar.js"></script>
+    <script defer src="js/components/search.js"></script>
+    <script defer src="js/components/footer.js"></script>
+    <script src="https://kit.fontawesome.com/7d46e21d26.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- LOGO -->
+      <a class="logo" href="signedIn_home.html">
+        <img src="images/logoOriginal.png" alt="Home of SquareEyes" />
+      </a>
+      <!-- HAMBURGER / MENU -->
+      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav>
+        <ul>
+          <li>
+            <a a href="signedIn_home.html" class="btn"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="signedIn_films.html" class="btn current"><i class="fas fa-film"></i>Films</a>
+          </li>
+
+          <li>
+            <a href="signedIn_community.html" class="btn"> <i class="fas fa-glasses"></i>Community</a>
+          </li>
+          <li>
+            <a href="signedIn_profile_marius.html" class="btn"><i class="fas fa-user-alt"></i>Marius</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sign out -->
+      <div class="signOut">
+        <a href="index.html">sign out<i class="fas fa-sign-in-alt"></i></a>
+      </div>
+      <!-- SEARCH-BAR -->
+      <div id="searchbar">
+        <div class="search_box">
+          <input id="theInput" type="search" placeholder="Search.." />
+          <form method="get" action="search.html">
+            <button id="theButton"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <div id="wrapper">
+      <div aria-label="You are here" class="breadcrumbs">
+        <ul>
+          <li><i class="fas fa-thumbtack"></i></li>
+          <li><a href="films.html">Films</a></li>
+          <li><i class="fas fa-angle-right"></i></li>
+          <li>Search results</li>
+        </ul>
+      </div>
+
+      <main>
+        <!-- Section Search results-->
+        <section class="search-results">
+          <h1>Search-results</h1>
+          <div class="films"></div>
+        </section>
+        <!-- Section Search results END -->
+        <section>
+          <h1>Search results</h1>
+          <div class="films">
+            <!-- Film -->
+            <div>
+              <a href="signedIn_film_sample_byAuthor.html"><img src="../images/films/films_theEye.jpg" alt="The Eye (2020)" class="film-style" /></a>
+              <p><a href="signedIn_film_sample_byAuthor.html">The Eye</a></p>
+              <p>By: J.Thomas</p>
+              <p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </p>
+            </div>
+            <!-- Film -->
+            <div>
+              <a href="signedIn_film_sample_byAuthor.html"><img src="../images/films/films_clown.jpg" alt="Clown (2019)" class="film-style" /></a>
+              <p><a href="signedIn_film_sample_byAuthor.html">Clown</a></p>
+              <p>By: Tim Robbins</p>
+              <p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </p>
+            </div>
+            <!-- Film -->
+            <div>
+              <a href="signedIn_film_sample_byAuthor.html"><img src="../images/films/films_forrest.jpg" alt="Dark Forrest (2019)" class="film-style" /></a>
+              <p>
+                <a href="signedIn_film_sample_byAuthor.html">Dark Forrest</a>
+              </p>
+              <p>By: Ron Burgundy</p>
+              <p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </p>
+            </div>
+            <!-- Film -->
+            <div>
+              <a href="signedIn_film_sample_byAuthor.html"><img src="../images/films/films_house.jpg" alt="The Haunted House (2019)" class="film-style" /></a>
+              <p>
+                <a href="signedIn_film_sample_byAuthor.html">The Haunted House</a>
+              </p>
+              <p>By: J.Hover</p>
+              <p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </p>
+            </div>
+            <!-- Film -->
+            <div>
+              <a href="signedIn_film_sample_byAuthor.html"><img src="../images/films/films_starWars.jpg" alt="Inside the Death Star (2019)" class="film-style" /></a>
+              <p>
+                <a href="signedIn_film_sample_byAuthor.html">Inside the Death Star</a>
+              </p>
+              <p>By: The Don</p>
+              <p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </p>
+            </div>
+            <!-- Film -->
+            <div>
+              <a href="signedIn_film_sample_byAuthor.html"><img src="../images/films/films_abandoned.jpg" alt="Abandoned (2019)" class="film-style" /></a>
+              <p><a href="signedIn_film_sample_byAuthor.html">Abandoned</a></p>
+              <p>By: J.Thomas</p>
+              <p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- === Footer === -->
+      <footer><!-- js --></footer>
+    </div>
+  </body>
+</html>

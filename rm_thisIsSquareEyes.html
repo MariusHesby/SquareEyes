@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>This is SquareEyes - SquareEyes</title>
+    <meta name="description" content="More info about SquareEyes" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/styles-820.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/isu5gkb.css" />
+    <script defer src="js/components/searchbar.js"></script>
+    <script defer src="js/components/search.js"></script>
+    <script defer src="js/components/footer.js"></script>
+    <script src="https://kit.fontawesome.com/7d46e21d26.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- LOGO -->
+      <a class="logo" href="index.html">
+        <img src="images/logoOriginal.png" alt="Home of SquareEyes" />
+      </a>
+      <!-- HAMBURGER / MENU -->
+      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars" style="visibility: hidden"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" class="btn hidden"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="films.html" class="btn hidden"><i class="fas fa-film"></i>Films</a>
+          </li>
+          <li>
+            <a href="community.html" class="btn hidden"><i class="fas fa-glasses"></i>Commumity</a>
+          </li>
+          <li>
+            <a href="signedIn_profile_marius.html" class="btn hidden"><i class="fas fa-user-alt"></i>Marius</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- JOIN US -->
+      <div class="joinUs">
+        <a href="joinUs.html" class="cta-join">Join&nbsp;Us</a>
+        <a href="signedIn_home.html" class="cta-logIn">Sign&nbsp;In</a>
+      </div>
+      <!-- SEARCH-BAR -->
+      <div id="searchbar">
+        <div class="search_box">
+          <input id="theInput" type="search" placeholder="Search.." />
+          <form method="get" action="searchJoin.html">
+            <button id="theButton"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <div id="wrapper">
+      <div aria-label="You are here" class="breadcrumbs">
+        <ul>
+          <li><i class="fas fa-thumbtack"></i></li>
+          <li><a href="index.html">Home</a></li>
+          <li><i class="fas fa-angle-right"></i></li>
+          <li>This is SquareEyes</li>
+        </ul>
+      </div>
+
+      <main>
+        <!-- Section Search results-->
+        <section class="search-results">
+          <h1>Search-results</h1>
+          <div class="films"></div>
+        </section>
+        <!-- Section Search results END -->
+
+        <section>
+          <h1>This is SquareEyes</h1>
+          <p>
+            SquareEyes is a video streaming website for independent filmmakers who are passionate about making films, and for all the people out there who are passionate about watching high quality
+            films.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id volutpat
+            lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor orci dapibus ultrices in. Egestas diam in arcu cursus euismod.
+          </p>
+          <p>
+            Dictum fusce ut placerat orci nulla. Tincidunt ornare massa eget egestas purus viverra accumsan in nisl. Tempor id eu nisl nunc mi ipsum faucibus. Fusce id velit ut tortor pretium. Massa
+            ultricies mi quis hendrerit dolor magna eget. Nullam eget felis eget nunc lobortis.
+          </p>
+
+          <p>
+            Faucibus ornare suspendisse sed nisi. Sagittis eu volutpat odio facilisis mauris sit amet massa. Erat velit scelerisque in dictum non consectetur a erat. Amet nulla facilisi morbi tempus
+            iaculis urna. Egestas purus viverra accumsan in nisl. Feugiat in ante metus dictum at tempor commodo.
+          </p>
+
+          <p>Convallis tellus id interdum velit laoreet. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Viverra aliquet eget sit amet</p>
+        </section>
+      </main>
+
+      <!-- === Footer === -->
+      <footer><!-- js --></footer>
+    </div>
+  </body>
+</html>

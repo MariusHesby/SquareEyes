@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Profile - SquareEyes</title>
+    <meta name="description" content="Update your profile settings" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/styles-820.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/isu5gkb.css" />
+    <script defer src="js/components/searchbar.js"></script>
+    <script defer src="js/components/search.js"></script>
+    <script defer src="js/components/progressbar.js"></script>
+    <script defer src="js/signedIn_profile_marius.js"></script>
+    <script defer src="js/components/footer.js"></script>
+    <script src="https://kit.fontawesome.com/7d46e21d26.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!-- ======================== HEADER ======================================= -->
+    <header>
+      <!-- LOGO -->
+      <a class="logo" href="signedIn_home.html">
+        <img src="images/logoOriginal.png" alt="Home of SquareEyes" />
+      </a>
+      <!-- HAMBURGER / MENU -->
+      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav>
+        <ul>
+          <li>
+            <a a href="signedIn_home.html" class="btn"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="signedIn_films.html" class="btn"><i class="fas fa-film"></i>Films</a>
+          </li>
+
+          <li>
+            <a href="signedIn_community.html" class="btn"><i class="fas fa-glasses"></i>Community</a>
+          </li>
+          <li>
+            <a href="signedIn_profile_marius.html" class="btn current"><i class="fas fa-user-alt"></i>Marius</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sign out -->
+      <div class="signOut">
+        <a href="index.html">sign out<i class="fas fa-sign-in-alt"></i></a>
+      </div>
+      <!-- SEARCH-BAR -->
+      <div id="searchbar">
+        <div class="search_box">
+          <input id="theInput" type="search" placeholder="Search.." />
+          <form method="get" action="search.html">
+            <button id="theButton"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <div id="wrapper">
+      <div aria-label="You are here" class="breadcrumbs">
+        <ul>
+          <li><i class="fas fa-thumbtack"></i></li>
+          <li>Marius (profile page)</li>
+        </ul>
+      </div>
+
+      <main>
+        <!-- Section Search results-->
+        <section class="search-results">
+          <h1>Search-results</h1>
+          <div class="films"></div>
+        </section>
+        <!-- Section Search results END -->
+
+        <h1 class="margin-bottom">Profile page!</h1>
+
+        <div class="flex">
+          <!-- Section -->
+          <section>
+            <h2>The basics</h2>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+            <fieldset id="basics">
+              <legend>Your details</legend>
+              <form id="theForm" action="form-success.php" method="GET">
+                <!-- Name -->
+                <label for="full-name">Full name</label>
+                <input type="text" name="full-name" id="full-name" value="Marius Hesby" class="form__input verifyName" />
+                <div class="formError" id="fullNameError">Full name must be min 4 characters</div>
+                <!-- city -->
+                <label for="address-level2">City</label>
+                <input type="text" name="address-level2" id="address-level2" class="form__input verifyCity" />
+                <div class="formError" id="cityError">City name must be min 2 characters</div>
+                <!-- gender -->
+                <label for="gender">Gender</label>
+                <input type="text" name="gender" id="gender" class="form__input verifyGender" />
+                <div class="formError" id="genderError">Gender type must be min 2 characters</div>
+                <!-- e-mail -->
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" value="marius.r.hesby@gmail.com" class="form__input verifyEmail" required />
+                <div class="formError" id="emailError">Please enter a valid e-mail</div>
+                <!-- password -->
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" value="Tralalala" class="form__input verifyPassword" required />
+                <div class="formError" id="passwordError">Please enter a valid e-mail</div>
+              </form>
+            </fieldset>
+          </section>
+          <!-- Section -->
+          <section>
+            <h2>Payment method</h2>
+            <div class="progress-bar">
+              <div class="progress" style="width: 100%; background: var(--green)"></div>
+            </div>
+            <fieldset>
+              <legend>Payment method</legend>
+              <form action="form-success.php" method="GET">
+                <label for="cc-name">Name on Card</label>
+                <input type="text" id="cc-name" name="cardname" value="Marius Rostøl Hesby" class="form__input" />
+                <label for="cc-number">Credit card number</label>
+                <input type="text" id="cardnumber" name="cardnumber" value="4444-5555-6666-7777" class="form__input" />
+                <label for="cc-exp-month">Exp Month</label>
+                <input type="text" id="expmonth" name="expmonth" value="Desember" class="form__input" />
+                <label for="cc-exp-year">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" value="2022" class="form__input" />
+                <label for="cc-csc">CVV</label>
+                <input type="text" id="cvv" name="cvv" value="364" class="form__input" />
+              </form>
+            </fieldset>
+          </section>
+          <section>
+            <button class="cta-create">Update information</button>
+          </section>
+        </div>
+      </main>
+
+      <!-- === Footer === -->
+      <footer><!-- js --></footer>
+    </div>
+  </body>
+</html>

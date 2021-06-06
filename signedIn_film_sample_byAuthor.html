@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Film sample - SquareEyes</title>
+    <meta name="description" content="Information about the chosen film" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/styles-820.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/isu5gkb.css" />
+    <script defer src="js/components/searchbar.js"></script>
+    <script defer src="js/components/search.js"></script>
+    <script defer src="js/components/signedIn_film_sample_byAuthor_details.js"></script>
+    <script defer src="js/components/message.js"></script>
+    <script defer src="js/signedIn_film_sample_byAuthor.js"></script>
+    <script defer src="js/components/footer.js"></script>
+    <script src="https://kit.fontawesome.com/7d46e21d26.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- Logo -->
+      <a class="logo" href="signedIn_home.html">
+        <img src="images/logoOriginal.png" alt="Home of SquareEyes" />
+      </a>
+
+      <!-- Hamburger / menu -->
+      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav>
+        <ul>
+          <li>
+            <a href="signedIn_home.html" class="btn"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="signedIn_films.html" class="btn current"><i class="fas fa-film"></i>Films</a>
+          </li>
+
+          <li>
+            <a href="signedIn_community.html" class="btn"> <i class="fas fa-glasses"></i>Community</a>
+          </li>
+          <li>
+            <a href="signedIn_profile_marius.html" class="btn"><i class="fas fa-user-alt"></i>Marius</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sign out -->
+      <div class="signOut">
+        <a href="index.html">sign out<i class="fas fa-sign-in-alt"></i></a>
+      </div>
+
+      <!-- Search-bar -->
+      <div id="searchbar">
+        <div class="search_box">
+          <input id="theInput" type="search" placeholder="Search.." />
+          <form method="get" action="search.html">
+            <button id="theButton"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <div id="wrapper">
+      <!-- === Breadcrumbs === -->
+      <div class="breadcrumbs">
+        <ul aria-label="You are here">
+          <li><i class="fas fa-thumbtack"></i></li>
+          <li><a href="signedIn_films.html">Films</a></li>
+          <li><i class="fas fa-angle-right"></i></li>
+          <li>Sample Film (2020)</li>
+        </ul>
+      </div>
+
+      <main>
+        <!-- Section Search results-->
+        <section class="search-results">
+          <h1>Search-results</h1>
+          <div class="films"></div>
+        </section>
+        <!-- Section Search results END -->
+
+        <div class="film-rent-content"></div>
+        <section class="film-content">
+          <h2>Plot:</h2>
+          <p><!-- js --></p>
+        </section>
+      </main>
+
+      <!-- === Footer === -->
+      <footer><!-- js --></footer>
+    </div>
+  </body>
+</html>

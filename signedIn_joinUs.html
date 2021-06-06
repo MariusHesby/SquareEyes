@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Join us - SquareEyes</title>
+    <meta name="description" content="Form for signing up to SquareEyes" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/styles-820.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/isu5gkb.css" />
+    <script defer src="js/components/searchbar.js"></script>
+    <script defer src="js/components/search.js"></script>
+    <script defer src="js/components/footer.js"></script>
+    <script src="https://kit.fontawesome.com/7d46e21d26.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- LOGO -->
+      <a class="logo" href="index.html">
+        <img src="images/logoOriginal.png" alt="Home of SquareEyes" />
+      </a>
+      <!-- HAMBURGER / MENU -->
+      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav>
+        <ul>
+          <li>
+            <a a href="signedIn_home.html" class="btn current"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="signedIn_films.html" class="btn"><i class="fas fa-film"></i>Films</a>
+          </li>
+
+          <li>
+            <a href="signedIn_community.html" class="btn"><i class="fas fa-glasses"></i>Community</a>
+          </li>
+          <li>
+            <a href="signedIn_profile_marius.html" class="btn"><i class="fas fa-user-alt"></i>Marius</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sign out -->
+      <div class="signOut">
+        <a href="index.html">sign out<i class="fas fa-sign-in-alt"></i></a>
+      </div>
+      <!-- SEARCH-BAR -->
+      <div id="searchbar">
+        <div class="search_box">
+          <input id="theInput" type="search" placeholder="Search.." />
+          <form method="get" action="search.html">
+            <button id="theButton"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <div id="wrapper">
+      <div aria-label="You are here" class="breadcrumbs">
+        <ul>
+          <li><i class="fas fa-thumbtack"></i></li>
+          <li><a href="index.html">Home</a></li>
+          <li><i class="fas fa-angle-right"></i></li>
+          <li>Join Us</li>
+        </ul>
+      </div>
+
+      <main>
+        <!-- Section Search results-->
+        <section class="search-results">
+          <h1>Search-results</h1>
+          <div class="films"></div>
+        </section>
+        <!-- Section Search results END -->
+
+        <h2>Join Now</h2>
+        <div class="flex">
+          <!-- Section -->
+          <section class="margin-left">
+            <h3>Create an account</h3>
+            <fieldset>
+              <legend>Your details</legend>
+              <form action="form-success.php" method="GET">
+                <label for="fname">Your first name</label>
+                <input type="text" name="fname" id="fname" class="form__input" required />
+                <label for="lname">Your last name</label>
+                <input type="text" name="lname" id="lname" class="form__input" />
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" class="form__input" required />
+                <label for="password">Create a password</label>
+                <input type="password" name="password" id="password" class="form__input" />
+                <div>
+                  <input type="checkbox" name="filmmaker" id="filmmaker" class="form__input_nb" /><label for="filmmaker">Film-maker</label>
+
+                  <input type="checkbox" name="filmwatcher" id="filmwatcher" class="form__input_nb" /><label for="filmwatcher">Film watcher</label>
+                </div>
+                <div><input type="checkbox" name="privacypolicy" id="privacypolicy" class="form__input_nb" /><label for="privacypolicy">Yes, I agree to the privacy policy!</label></div>
+                <div class="flex">
+                  <a href="loggedIn.html" class="cta-create">Create Account</a>
+                </div>
+              </form>
+            </fieldset>
+          </section>
+          <!-- Section -->
+          <section class="margin-left">
+            <h3>Sign right in</h3>
+            <a href="http://www.google.com" class="loginBox google">Google account</a>
+            <a href="http://www.facebook.com" class="loginBox facebook">Facebook account</a>
+          </section>
+        </div>
+      </main>
+
+      <!-- === Footer === -->
+      <footer><!-- js --></footer>
+    </div>
+  </body>
+</html>

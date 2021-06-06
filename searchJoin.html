@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Films - SquareEyes</title>
+    <meta name="description" content="The search results when searching for a keyword" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/styles-820.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/isu5gkb.css" />
+    <script defer src="js/components/searchbar.js"></script>
+    <script defer src="js/components/search.js"></script>
+    <script defer src="js/components/footer.js"></script>
+    <script src="https://kit.fontawesome.com/7d46e21d26.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- LOGO -->
+      <a class="logo" href="index.html">
+        <img src="images/logoOriginal.png" alt="Home of SquareEyes" />
+      </a>
+      <!-- HAMBURGER / MENU -->
+      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars" style="visibility: hidden"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" class="btn hidden"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="films.html" class="btn hidden"><i class="fas fa-film"></i>Films</a>
+          </li>
+          <li>
+            <a href="community.html" class="btn hidden"><i class="fas fa-glasses"></i>Commumity</a>
+          </li>
+          <li>
+            <a href="profile_marius.html" class="btn hidden"><i class="fas fa-user-alt"></i>Marius</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- JOIN US -->
+      <div class="joinUs">
+        <a href="joinUs.html" class="cta-join">Join&nbsp;Us</a>
+        <a href="signedIn_home.html" class="cta-logIn">Sign&nbsp;In</a>
+      </div>
+      <!-- SEARCH-BAR -->
+      <div id="searchbar">
+        <div class="search_box">
+          <input id="theInput" type="search" placeholder="Search.." />
+          <form method="get" action="searchJoin.html">
+            <button id="theButton"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <div id="wrapper">
+      <div aria-label="You are here" class="breadcrumbs">
+        <ul>
+          <li><i class="fas fa-thumbtack"></i></li>
+          <li><a href="films.html">Films</a></li>
+          <li><i class="fas fa-angle-right"></i></li>
+          <li>Search results</li>
+        </ul>
+      </div>
+
+      <main>
+        <!-- Section Search results-->
+        <section class="search-results">
+          <h1>Search-results</h1>
+          <div class="films"></div>
+        </section>
+        <!-- Section Search results END -->
+
+        <section>
+          <h1>Search results</h1>
+          <p class="center">Please <a href="joinUs.html">Join Us</a> or <a href="signIn.html">Sign In</a> to browse our awesome selection of movies =)</p>
+          <p class="center">Not ready? Feel free to check out some freebees in the <a href="index.html#expect">What can you expect</a> section.</p>
+          <img class="medium" src="images/37279.svg" alt="popcorn" />
+        </section>
+      </main>
+
+      <!-- === Footer === -->
+      <footer><!-- js --></footer>
+    </div>
+  </body>
+</html>

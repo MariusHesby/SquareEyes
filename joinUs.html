@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Join Us - SquareEyes</title>
+    <meta name="description" content="Form for signing up to SquareEyes" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/styles-820.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/isu5gkb.css" />
+    <script defer src="js/components/searchbar.js"></script>
+    <script defer src="js/components/search.js"></script>
+    <script defer src="js/components/message.js"></script>
+    <script defer src="js/joinUs.js"></script>
+    <script defer src="js/components/footer.js"></script>
+    <script defer src="https://kit.fontawesome.com/7d46e21d26.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- Logo -->
+      <a class="logo" href="index.html">
+        <img src="images/logoOriginal.png" alt="Home of SquareEyes" />
+      </a>
+
+      <!-- Hamburger / menu -->
+      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars" style="visibility: hidden"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" class="btn hidden"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="films.html" class="btn hidden"><i class="fas fa-film"></i>Films</a>
+          </li>
+          <li>
+            <a href="community.html" class="btn hidden"><i class="fas fa-glasses"></i>Commumity</a>
+          </li>
+          <li>
+            <a href="profile_marius.html" class="btn hidden"><i class="fas fa-user-alt"></i>Marius</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Join us -->
+      <div class="joinUs">
+        <a href="joinUs.html" class="cta-join">Join&nbsp;Us</a>
+        <a href="signedIn_home.html" class="cta-logIn">Sign&nbsp;In</a>
+      </div>
+    </header>
+
+    <div id="wrapper">
+      <!-- Breadcrumbs -->
+      <div class="breadcrumbs">
+        <ul aria-label="You are here">
+          <li><i class="fas fa-thumbtack"></i></li>
+          <li><a href="index.html">Home</a></li>
+          <li><i class="fas fa-angle-right"></i></li>
+          <li>Join Us</li>
+        </ul>
+      </div>
+
+      <main>
+        <!-- Section Search results-->
+        <section class="search-results">
+          <h1>Search-results</h1>
+          <div class="films"></div>
+        </section>
+        <!-- Section Search results END -->
+
+        <h1>Join Us</h1>
+        <div class="message"></div>
+        <div class="flex">
+          <!-- Section -->
+          <section class="margin-left">
+            <h2>Create account</h2>
+
+            <!-- Fieldset -->
+            <fieldset>
+              <legend>Your details</legend>
+              <form id="contactForm" action="signedIn_congratulations.html" method="GET" autocomplete="on">
+                <!-- Name -->
+                <div class="form-group">
+                  <label for="fullName">Your full name </label>
+                  <input type="text" name="fullName" id="fullName" class="form__input verifyName" />
+                  <div class="formError" id="fullNameError">Please enter your full name</div>
+                </div>
+                <!-- E-mail -->
+                <div class="form-group">
+                  <label for="email">Your e-mail</label>
+                  <input type="email" name="email" id="email" class="form__input verifyMail" />
+                  <div class="formError" id="emailError">Please enter a valid e-mail</div>
+                </div>
+                <!-- Password -->
+                <div class="form-group">
+                  <label for="password">Create a password</label>
+                  <input type="password" name="password" id="password" class="form__input verifyPassword" />
+                  <div class="formError" id="passwordError">Please enter a valid password (minimum 8 characters)</div>
+                </div>
+
+                <!-- Fieldset -->
+                <fieldset>
+                  <legend>Purpose for joining</legend>
+                  <input type="checkbox" name="filmmaker" id="filmmaker" class="form__input_nb" checked /><label for="filmmaker">Film-maker</label>
+                  <input type="checkbox" name="filmwatcher" id="filmwatcher" class="form__input_nb" /><label for="filmwatcher">Film watcher</label>
+                </fieldset>
+
+                <!-- Fieldset -->
+                <fieldset>
+                  <legend>Confirm</legend>
+                  <input type="checkbox" name="privacypolicy" id="privacypolicy" class="form__input_nb" checked /><label for="privacypolicy">Yes, I agree to the privacy policy!</label>
+                </fieldset>
+
+                <!-- Account button -->
+                <div>
+                  <input type="submit" value="Create account" class="form__input button cta-create" />
+                </div>
+              </form>
+            </fieldset>
+          </section>
+        </div>
+      </main>
+
+      <!-- === Footer === -->
+      <footer><!-- js --></footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Connecting film-lovers - SquareEyes</title>
+    <meta name="description" content="A streaming site for film-lovers by film-lovers" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/styles-820.css" rel="stylesheet" />
+    <link href="styles/logoAnimation.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/isu5gkb.css" />
+    <script defer src="js/components/searchbar.js"></script>
+    <script defer src="js/components/search.js"></script>
+    <script defer src="js/signedIn_home.js"></script>
+    <script defer src="js/components/footer.js"></script>
+    <script src="https://kit.fontawesome.com/7d46e21d26.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- LOGO -->
+      <a class="logo" href="signedIn_home.html">
+        <img src="images/logoOriginal.png" alt="Home of SquareEyes" />
+      </a>
+      <!-- HAMBURGER / MENU -->
+      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav>
+        <ul>
+          <li>
+            <a a href="signedIn_home.html" class="btn current"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="signedIn_films.html" class="btn"><i class="fas fa-film"></i>Films</a>
+          </li>
+
+          <li>
+            <a href="signedIn_community.html" class="btn"><i class="fas fa-glasses"></i>Community</a>
+          </li>
+          <li>
+            <a href="signedIn_profile_marius.html" class="btn"><i class="fas fa-user-alt"></i>Marius</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sign out -->
+      <div class="signOut">
+        <a href="index.html">sign out<i class="fas fa-sign-in-alt"></i></a>
+      </div>
+      <!-- SEARCH-BAR -->
+      <div id="searchbar">
+        <div class="search_box">
+          <input id="theInput" type="search" placeholder="Search.." />
+          <button id="theButton"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <div id="wrapper">
+      <div aria-label="You are here" class="breadcrumbs">
+        <ul>
+          <li><i class="fas fa-thumbtack"></i></li>
+          <li><a href="signedIn_home.html"></a>Home (signed in as <a href="signedIn_profile_marius.html">Marius</a>)</li>
+        </ul>
+      </div>
+
+      <main>
+        <!-- Section Search results-->
+        <section class="search-results">
+          <h1>Search-results</h1>
+          <div class="films"></div>
+        </section>
+        <!-- Section Search results END -->
+
+        <section>
+          <h1>Recent updates</h1>
+          <p><span class="bold">12.03.20:</span> J.Thomas uploaded a new movie, <a href="signedIn_film_sample_byAuthor.html">The Eye</a>.</p>
+          <p><span class="bold">10.03.20:</span> Tim Robbins updated movie title, <a href="signedIn_film_sample_byAuthor.html">Clown</a>.</p>
+          <p><span class="bold">10.03.20:</span> Tim Robbins uploaded a new movie, <a href="signedIn_film_sample_byAuthor.html">Clonw</a>.</p>
+          <p><span class="bold">07.03.20:</span> Squareeyes updated <a href="index.html">Home</a> section.</p>
+          <p><span class="bold">07.03.20:</span> Squareeyes updated <a href="films.html">Films</a> section.</p>
+        </section>
+        <!-- Section -->
+
+        <!-- Section -->
+        <section>
+          <h2>Recommendations</h2>
+          <div class="films recommendations"></div>
+          <h2>Top grossing</h2>
+          <div class="films top-grossing"></div>
+        </section>
+      </main>
+
+      <!-- === Footer === -->
+      <footer><!-- js --></footer>
+    </div>
+  </body>
+</html>

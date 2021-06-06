@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Connecting film-lovers - SquareEyes</title>
+    <meta name="description" content="A streaming site for film-lovers by film-lovers" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/styles-820.css" rel="stylesheet" />
+    <link href="styles/logoAnimation.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/isu5gkb.css" />
+    <script defer src="js/index.js"></script>
+    <script defer src="js/components/footer.js"></script>
+    <script src="https://kit.fontawesome.com/7d46e21d26.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- LOGO -->
+      <a class="logo" href="index.html">
+        <img src="images/logoOriginal.png" alt="Home of SquareEyes" />
+      </a>
+      <!-- HAMBURGER / MENU -->
+      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars" style="visibility: hidden"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" class="btn hidden"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="films.html" class="btn hidden"><i class="fas fa-film"></i>Films</a>
+          </li>
+          <li>
+            <a href="community.html" class="btn hidden"><i class="fas fa-glasses"></i>Commumity</a>
+          </li>
+          <li>
+            <a href="profile_marius.html" class="btn hidden"><i class="fas fa-user-alt"></i>Marius</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- JOIN US -->
+      <div class="joinUs">
+        <a href="joinUs.html" class="cta-join">Join&nbsp;Us</a>
+        <a href="signedIn_home.html" class="cta-logIn">Sign&nbsp;In</a>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <div id="wrapper">
+      <!-- BREADCRUMBS -->
+      <div aria-label="You are here" class="breadcrumbs">
+        <ul>
+          <li><i class="fas fa-thumbtack"></i></li>
+          <li>Home</li>
+        </ul>
+      </div>
+
+      <!--  MAIN  -->
+      <main>
+        <!-- Section -->
+        <section>
+          <h1>This is SquareEyes</h1>
+          <p class="main-paragraph">
+            <img src="images/redDragon.jpg" alt="Close-up of Red Dragon film camera" />
+            A
+            <em>video streaming website</em> for <em>independent filmmakers</em> who are passionate about making films - and for <em>people</em> who are passionate about
+            <em>watching high quality films.</em>
+          </p>
+          <p class="main-read-more">
+            <a href="rm_thisIsSquareEyes.html">More about SquareEyes!</a>
+          </p>
+        </section>
+
+        <!-- Section -->
+        <section>
+          <h2>How does it work?</h2>
+          <p>
+            This is a platform for film-lovers. It’s not youtube. If you are a dedicated and passionate film-maker, you can upload your movies here, and get paid every time someone watches one of your
+            movies.
+          </p>
+          <p>If you are passionate about watching films, this is a great opportunity for you to discover amazing films, and at the same time support small and independent film-makers.</p>
+          <p>
+            <a href="rm_howDoesItWork.html">More about how it works!</a>
+          </p>
+        </section>
+
+        <!-- Section -->
+        <section>
+          <h2 id="expect">What can you expect?</h2>
+          <p>High Quality films crafted by people who are passionate about making films. Below are a few random samples of some recently uploaded content.</p>
+
+          <div class="films">
+            <div class="loader"></div>
+          </div>
+        </section>
+      </main>
+
+      <!-- === Footer === -->
+      <footer><!-- js --></footer>
+    </div>
+  </body>
+</html>
